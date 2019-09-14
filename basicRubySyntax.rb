@@ -87,3 +87,39 @@ puts "\n\n"
 
 puts lucky_numbers.length
 =end
+
+# n dimensional arrays
+
+=begin
+number_grid = [ [1, 2], [3, 4] ]
+number_grid [0][0] = 99
+
+puts number_grid[0][0] # index 0 of array 0
+puts number_grid[0][1]
+=end
+
+# array methods 
+
+=begin
+friends = []
+friends.push("Oscar")
+friends.push("Angela")
+friends.push("Kevin")
+
+# friends.pop removes last element
+
+puts friends
+puts "\n"
+
+puts friends.reverse # reversing the indexes
+puts "\n"
+
+puts friends.sort #alphabetical or numerically with ints
+puts "\n"
+
+puts friends.include? "Oscar" # = true
+=end
+
+
+
+
