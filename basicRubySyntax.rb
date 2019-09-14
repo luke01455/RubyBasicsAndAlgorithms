@@ -120,6 +120,37 @@ puts "\n"
 puts friends.include? "Oscar" # = true
 =end
 
+# methods 
 
+=begin
+def add_numbers(num1, num2=99) # def = function?
+    return num1+num2    # looks same as js
+end    #end = curly brackets?
 
+sum = add_numbers(4, 3)
+puts sum
+=end
 
+=begin
+# if statements
+is_student = true
+is_smart = false
+
+if is_student and is_smart # can use and or or
+     puts "You are a student"
+elsif is_student and !is_smart  # = else if
+    puts "You are not a smart student"
+else 
+    puts "You are not a student and not smart either"
+end
+
+# >, <, >=, <=, !=, ==
+
+if 1 < 3
+    puts "number comparison was true"
+end
+
+if "a" < "b"
+    puts "string comparison was true"
+end
+=end
