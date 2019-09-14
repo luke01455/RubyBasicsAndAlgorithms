@@ -55,5 +55,35 @@ puts Math.sqrt(144) # square root math operator  = 12.0
 puts Math.log(0) #percent change i think? not explained well. log(0)  = infinity
 =end
 
+# user input
 
+=begin
+puts "Enter your name: " 
+name = gets.chomp # get info from user # chomp function chomps off new line character
+puts "Hello #{name}, how are you"
 
+puts "Enter first num:"
+num1 = gets.chomp
+puts "Enter second num: "
+num2 = gets.chomp
+puts num1.to_f + num2.to_f
+=end
+
+# arrays
+
+=begin
+lucky_numbers = [4, 8, "fifteen", 16, 23, 42.0]
+
+lucky_numbers[0] = 90
+puts lucky_numbers[0]
+puts lucky_numbers[1]
+puts lucky_numbers[-1] # negative values grab from back of array so -2 = 23
+
+puts "\n\n"   # appears to put 2 new lines
+puts lucky_numbers[2, 3] # starts at index 2 and grabs 3 elements
+puts "\n\n"
+puts lucky_numbers[2..4] # grabs elements 2 through to 4
+puts "\n\n"  
+
+puts lucky_numbers.length
+=end
