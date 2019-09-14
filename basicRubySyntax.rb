@@ -154,3 +154,35 @@ if "a" < "b"
     puts "string comparison was true"
 end
 =end
+
+
+##switch
+=begin
+my_grade = "A"
+
+case my_grade    # so instead of switch and case, we have case and when
+    when "A"
+        puts "you pass"
+    when "F"
+        puts "you fail"
+    else
+        puts "invalid grade"
+end
+=end
+
+# dictionarys -- keys
+
+=begin
+test_grades = {
+    "Andy" => "B+",
+    :Stanley => "C", #another way of representing the key
+    "Ryan" => "A",
+    5 => 95.2 #can also use ints to represent key
+}
+
+test_grades["Andy"] = "B-" # can reassign the key
+puts test_grades["Andy"]
+puts test_grades[:Stanley]
+puts test_grades[5] # in dictionary this gets rendered as key not index, bit confusing
+=end
+
