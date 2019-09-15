@@ -208,6 +208,7 @@ end
 end
 =end
 
+=begin
 lucky_nums = [4, 8, 15, 16, 23, 42]
 
 for lucky_num in lucky_nums   #pretty sure this is most similar to js for loop
@@ -218,3 +219,29 @@ end
 # lucky_nums.each do |lucky_num|  #think this is foreach
 #    puts lucky_num
 # end
+
+=end
+
+#exception catching
+
+=begin
+begin  # prit sure this is try/catch
+num = 10/0
+rescue
+    puts "Error"
+end
+=end
+
+=begin
+begin
+num = 10/0
+rescue ZeroDivisionError #specify actual error were looking for
+puts "Error"
+rescue
+    puts "All other errors"
+end
+=end
+
+ # raise "Made up exception"  #no comprende
+
+ 
