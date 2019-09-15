@@ -186,3 +186,35 @@ puts test_grades[:Stanley]
 puts test_grades[5] # in dictionary this gets rendered as key not index, bit confusing
 =end
 
+# while loop
+=begin
+index = 1
+
+while index <= 5
+    puts index
+    index += 1
+end # pretty simple, could do with knowing how to nest these
+=end
+
+# for loops
+
+=begin
+for index in 0..5   # specified number of times it loops
+    puts index
+end
+
+5.times do |index|  #same as above
+    puts index
+end
+=end
+
+lucky_nums = [4, 8, 15, 16, 23, 42]
+
+for lucky_num in lucky_nums   #pretty sure this is most similar to js for loop
+    puts lucky_num
+end
+
+
+# lucky_nums.each do |lucky_num|  #think this is foreach
+#    puts lucky_num
+# end
