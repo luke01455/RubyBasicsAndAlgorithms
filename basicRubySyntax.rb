@@ -244,4 +244,42 @@ end
 
  # raise "Made up exception"  #no comprende
 
- 
+=begin
+ class Book
+    attr_accessor :title, :author  #declaring vars
+
+    def readBook()  # prototype function / method
+            puts "Reading #{self.title} by #{self.author}"  # self = this
+    end
+end #nesting
+
+book1 = Book.new()
+book1.title = "Harry Potter" #assigning vars
+book1.author = "JK Rowling"
+
+book1.readBook()  #using function
+puts book1.title 
+
+=end
+
+=begin
+class Book
+    attr_accessor :title, :author  #declaring vars
+
+    #constructor
+    def initialize(title, author) #initialize used for creating constructor
+        @title = title
+        @author = author
+    end
+
+    def readBook()  # prototype function / method
+            puts "Reading #{self.title} by #{self.author}"  # self = this
+    end
+end #nesting
+
+    book1 = Book.new("Harry Potter", "JK Rowling")  # .new calling initialize
+
+    puts book1.title
+
+    =end
+
