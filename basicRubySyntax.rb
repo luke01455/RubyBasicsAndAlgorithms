@@ -281,5 +281,64 @@ end #nesting
 
     puts book1.title
 
-    =end
+=end
 
+# getters and setters
+
+=begin
+class Book
+    attr_accessor :title, :author  #declaring vars
+    #constructor
+    def initialize(title, author) #initialize used for creating constructor
+        self.title = title
+        @author = author
+    end
+
+    def title=(title)
+        puts "Set"
+        @title = title
+    end
+
+    def title
+        puts "Get"
+        return @title
+    end
+end
+
+book1 = Book.new("Harry Potter", "JK Rowling")  # .new calling initialize
+
+puts book1.title
+=end
+
+# inheritance
+
+class Chef
+    def make_chicken()
+        puts "The chef makes chicken"
+    end
+
+    def make_salad()
+        puts "The chef makes salad"
+    end
+    
+    def make_special_dish()
+        puts "The chef makes a special dish"
+    end
+end
+
+class ItalianChef < Chef
+    def make_pasta()
+        puts "The chef makes pasta"
+    end
+
+    def make_special_dish()
+        puts "The chef makes chicken parm"
+    end
+end
+
+my_chef = Chef.new()
+my_chef.make_chicken()
+
+my_italian_chef = ItalianChef.new()
+
+my_italian_chef.make_chicken()
