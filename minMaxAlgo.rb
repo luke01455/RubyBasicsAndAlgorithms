@@ -19,3 +19,12 @@ def min_max(list)
 
   puts min_max([1,2,3,4,5])
   # puts min_max([2334454,5])
+
+
+  #best practice
+  
+=begin
+def min_max(lst)
+  lst.minmax
+end
+=end
